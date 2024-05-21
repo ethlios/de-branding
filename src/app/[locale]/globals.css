@@ -5,19 +5,19 @@
 /* Add New Fonts */
 @font-face {
     font-family: 'MadaniArabic-SemiBold';
-    src: url('../../public/fonts/MadaniArabic-SemiBold.woff2') format('woff2');
+    src: url('../../../public/fonts/MadaniArabic-SemiBold.woff2') format('woff2');
 }
 @font-face {
     font-family: 'Manrope-Medium';
-    src: url('../../public/fonts/Manrope-Medium.woff2') format('woff2');
+    src: url('../../../public/fonts/Manrope-Medium.woff2') format('woff2');
 }
 @font-face {
     font-family: 'Manrope-SemiBold';
-    src: url('../../public/fonts/Manrope-Semibold.woff2') format('woff2');
+    src: url('../../../public/fonts/Manrope-Semibold.woff2') format('woff2');
 }
 @font-face {
     font-family: 'Manrope-Bold';
-    src: url('../../public/fonts/Manrope-Bold.woff2') format('woff2');
+    src: url('../../../public/fonts/Manrope-Bold.woff2') format('woff2');
 }
 
 :root {
