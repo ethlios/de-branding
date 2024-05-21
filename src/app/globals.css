@@ -2,8 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Add New Fonts */
+@font-face {
+    font-family: 'MadaniArabic-SemiBold';
+    src: url('../../public/fonts/MadaniArabic-SemiBold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Manrope-Medium';
+    src: url('../../public/fonts/Manrope-Medium.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Manrope-SemiBold';
+    src: url('../../public/fonts/Manrope-Semibold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Manrope-Bold';
+    src: url('../../public/fonts/Manrope-Bold.woff2') format('woff2');
+}
+
 :root {
+    --primary1: #193c44;
+    --primary2: #70d3ee;
+    --primary3: #c5f3ff;
+    --secondary1: #bc58aa;
+    --info1: #bc58aa;
+    --secondary2: #ffac00;
+    --info2: #ffac00;
+    --secondary3: #ff5c5c;
+    --error: #ff5c5c;
+    --secondary4: #eeff73;
+    --success: #eeff73;
+    --black: #2e312a;
+    --white: #e1e1e1;
+    --quote: #7f7f7f;
+    --grandient1: linear-gradient(to right, #f05b4d, #ffca27, #c4d83b);
+    --grandient2: linear-gradient(to right, #582d86, #b92655, #e04c54);
+    --grandient3: linear-gradient(to right, #4c75b9, #4ca4b9, #3bb889,#bcd541);
 }
 
 body {
+    text-rendering: optimizeSpeed;
+}
+
+html * {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    user-select: none;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Custom Scrollbar */
+html *::-webkit-scrollbar {
+    display: none;
+    border-radius: 0;
+    width: 2px;
+    height: 30px;
+}
+
+/* Custom font */
+h1 {
+    font-family: 'MadaniArabic-SemiBold', sans-serif;
+}
+
+h2, h3, h4 {
+    font-family: 'Manrope-Bold', sans-serif;
 }
