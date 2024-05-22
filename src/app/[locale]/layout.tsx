@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Manrope } from 'next/font/google';
 import './globals.css';
+import { NextUIProvider } from "@nextui-org/react";
+import MuiSetUp from '~/common/Mui/MuiSetup';
 
 const inter = Manrope({ subsets: ["latin"], weight: ['300', '400', '500', '600', '700'] });
 
@@ -18,7 +20,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children, params: { locale } }: Readonly<RootLayoutProps>) {
     return (
         <html lang={locale}>
-            <body className={inter.className}>{children}</body>
+            <body className={inter.className}>
+                <MuiSetUp>
+                    <NextUIProvider>
+                        {children}
+                    </NextUIProvider>
+                </MuiSetUp>
+            </body>
         </html>
     );
 }

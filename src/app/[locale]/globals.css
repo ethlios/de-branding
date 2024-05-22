@@ -59,6 +59,31 @@ html *::-webkit-scrollbar {
     width: 2px;
     height: 30px;
 }
+/*Custom wrapper instead container*/
+.wrapper {
+    width: 100%;
+    padding: 0 20px;
+}
+@media (min-width: 640px) {
+    .wrapper {
+        padding: 0 30px;
+    }
+}
+@media (min-width: 768px) {
+    .wrapper {
+        padding: 0 50px;
+    }
+}
+@media (min-width: 1024px) {
+    .wrapper {
+        padding: 0 80px;
+    }
+}
+@media (min-width: 1280px) {
+    .wrapper {
+        padding: 0 100px;
+    }
+}
 
 /* Custom font */
 h1 {
