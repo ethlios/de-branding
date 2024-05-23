@@ -16,7 +16,7 @@ export default function Header({}: HeaderProps) {
         <header className={'wrapper'}>
             <div className={'flex justify-between py-6'}>
                 <Link href={'/'}>
-                    <Image alt="Logo công ty PESTNCLEAN" src={logo.src} width={176} height={100} priority />
+                    <Image alt="Logo công ty" src={logo.src} width={176} height={100} priority />
                 </Link>
                 <div className={'flex gap-4'}>
                     <div className={'flex items-center gap-4'}>
